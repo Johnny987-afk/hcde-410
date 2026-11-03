@@ -1,0 +1,306 @@
+run,prompt,model,version,timestamp,output,verified,notes
+1,"I have 20 survey responses about whether students would use AI for academic research.
+
+Please:
+1. Clean the responses by ignoring capitalization and extra spaces.
+2. Treat ""(blank)"" as a missing response.
+3. Count how many students answered Yes, No, and Maybe.
+4. Calculate the percentage of each answer using only valid responses.
+5. Show your results in a table.
+
+Here are the responses:
+
+1. Yes
+2. yes
+3. No
+4. Maybe
+5. YES
+6. (blank)
+7. no
+8. "" Yes ""
+9. Maybe
+10. maybe
+11. No
+12. yes
+13. (blank)
+14. Yes
+15. MAYBE
+16. No
+17. "" no ""
+18. YES
+19. yes
+20. Maybe",ChatGPT,5.6 sol,2026-11-02 20:20 PST,"After cleaning the responses by ignoring capitalization and extra spaces and treating ""(blank)"" as missing, the results are:
+
+### Survey Results
+
+| Response    | Count | Percentage |
+| ----------- | ----- | ---------- |
+| Yes         | 8     | 44.44%     |
+| No          | 5     | 27.78%     |
+| Maybe       | 5     | 27.78%     |
+| Total Valid | 18    | 100%       |
+| Missing     | 2     | —          |
+
+### Summary
+
+- Total responses: 20
+- Valid responses: 18
+- Missing responses: 2
+- Percentage calculation: (Count ÷ 18) × 100
+
+### Interpretation
+
+The results show that 44.44% of students would use AI for academic research, while 27.78% would not and 27.78% were unsure.
+
+Overall, ""Yes"" was the most common response, suggesting that students are generally open to using AI for academic research, although some remain hesitant or uncertain.",correct,Counts and percentages correct. Identified missing responses #6 and #13.
+2,"I have 20 survey responses about whether students would use AI for academic research.
+
+Please:
+1. Clean the responses by ignoring capitalization and extra spaces.
+2. Treat ""(blank)"" as a missing response.
+3. Count how many students answered Yes, No, and Maybe.
+4. Calculate the percentage of each answer using only valid responses.
+5. Show your results in a table.
+
+Here are the responses:
+
+1. Yes
+2. yes
+3. No
+4. Maybe
+5. YES
+6. (blank)
+7. no
+8. "" Yes ""
+9. Maybe
+10. maybe
+11. No
+12. yes
+13. (blank)
+14. Yes
+15. MAYBE
+16. No
+17. "" no ""
+18. YES
+19. yes
+20. Maybe",ChatGPT,5.6 sol,2026-11-02 20:23 PST,"After cleaning the responses by ignoring capitalization and extra spaces and treating ""(blank)"" as missing, 18 out of 20 responses are valid.
+
+### Survey Results
+
+| Response    | Count | Percentage |
+| ----------- | ----- | ---------- |
+| Yes         | 8     | 44.44%     |
+| No          | 5     | 27.78%     |
+| Maybe       | 5     | 27.78%     |
+| Total Valid | 18    | 100%       |
+| Missing     | 2     | —          |
+
+### Summary
+
+- Total responses: 20
+- Valid responses: 18
+- Missing responses: 2
+- Most common answer: Yes (44.44%)
+
+### Calculation
+
+Percentages are calculated using only the 18 valid responses:
+
+- Yes: 8 ÷ 18 × 100 = 44.44%
+- No: 5 ÷ 18 × 100 = 27.78%
+- Maybe: 5 ÷ 18 × 100 = 27.78%
+
+### Conclusion
+
+The survey results show that 44.44% of students would use AI for academic research, while 27.78% would not and 27.78% were unsure. ""Yes"" was the most common response, suggesting that students generally have a positive attitude toward using AI for academic research, although some remain hesitant.",correct,Counts and percentages correct. Showed explicit calculation formulas.
+3,"I have 20 survey responses about whether students would use AI for academic research.
+
+Please:
+1. Clean the responses by ignoring capitalization and extra spaces.
+2. Treat ""(blank)"" as a missing response.
+3. Count how many students answered Yes, No, and Maybe.
+4. Calculate the percentage of each answer using only valid responses.
+5. Show your results in a table.
+
+Here are the responses:
+
+1. Yes
+2. yes
+3. No
+4. Maybe
+5. YES
+6. (blank)
+7. no
+8. "" Yes ""
+9. Maybe
+10. maybe
+11. No
+12. yes
+13. (blank)
+14. Yes
+15. MAYBE
+16. No
+17. "" no ""
+18. YES
+19. yes
+20. Maybe",ChatGPT,5.6 sol,2026-11-02 20:27 PST,"After cleaning the responses by ignoring capitalization and extra spaces and treating ""(blank)"" as missing, there are 18 valid responses out of 20.
+
+### Survey Results
+
+| Response      | Count | Percentage |
+| ------------- | ----- | ---------- |
+| Yes           | 8     | 44.44%     |
+| No            | 5     | 27.78%     |
+| Maybe         | 5     | 27.78%     |
+| Total (Valid) | 18    | 100%       |
+| Missing       | 2     | —          |
+
+### Data Cleaning Summary
+
+- Total responses: 20
+- Valid responses: 18
+- Missing responses: 2 (responses #6 and #13)
+- Cleaning applied: Standardized capitalization, removed extra spaces and surrounding quotation marks, and excluded missing responses.
+
+### Interpretation
+
+The most common answer was Yes (44.44%), followed by No and Maybe (both 27.78%). This suggests that students are generally open to using AI for academic research, although more than half of the valid respondents were either unsure or unwilling to use it.
+
+Note: All percentages are calculated using only the 18 valid responses.",correct,"Counts and percentages correct. Said students are generally open to AI, although Yes was only 44.44%."
+4,"I have 20 survey responses about whether students would use AI for academic research.
+
+Please:
+1. Clean the responses by ignoring capitalization and extra spaces.
+2. Treat ""(blank)"" as a missing response.
+3. Count how many students answered Yes, No, and Maybe.
+4. Calculate the percentage of each answer using only valid responses.
+5. Show your results in a table.
+
+Here are the responses:
+
+1. Yes
+2. yes
+3. No
+4. Maybe
+5. YES
+6. (blank)
+7. no
+8. "" Yes ""
+9. Maybe
+10. maybe
+11. No
+12. yes
+13. (blank)
+14. Yes
+15. MAYBE
+16. No
+17. "" no ""
+18. YES
+19. yes
+20. Maybe",Gemini,Auto (specific model not shown),2026-11-02 20:24 PST,"```python
+responses = [
+    ""Yes"", ""yes"", ""No"", ""Maybe"", ""YES"", ""(blank)"", ""no"", "" Yes "", ""Maybe"", ""maybe"",
+    ""No"", ""yes"", ""(blank)"", ""Yes"", ""MAYBE"", ""No"", "" no "", ""YES"", ""yes"", ""Maybe""
+]
+
+import pandas as pd
+
+# Clean responses
+cleaned = []
+for r in responses:
+    # Strip whitespace, quotes, lowercase
+    r_clean = r.strip().strip('""').strip(""'"").strip().lower()
+    if r_clean == ""(blank)"" or r_clean == """":
+        cleaned.append(None)
+    else:
+        # Capitalize properly for standard Yes/No/Maybe representation
+        cleaned.append(r_clean.capitalize())
+
+s = pd.Series(cleaned)
+print(""Cleaned series:"")
+print(s)
+
+# Counts
+counts = s.value_counts(dropna=False)
+print(""\nCounts:"")
+print(counts)
+
+valid_counts = s.dropna().value_counts()
+total_valid = s.dropna().count()
+percentages = (valid_counts / total_valid) * 100
+
+print(""\nValid counts:"")
+print(valid_counts)
+print(f""Total valid responses: {total_valid}"")
+print(""\nPercentages:"")
+print(percentages)
+
+
+```
+
+```text
+Cleaned series:
+0       Yes
+1       Yes
+2        No
+3     Maybe
+4       Yes
+5      None
+6        No
+7       Yes
+8     Maybe
+9     Maybe
+10       No
+11      Yes
+12     None
+13      Yes
+14    Maybe
+15       No
+16       No
+17      Yes
+18      Yes
+19    Maybe
+dtype: object
+
+Counts:
+Yes      8
+No       5
+Maybe    5
+None     2
+Name: count, dtype: int64
+
+Valid counts:
+Yes      8
+No       5
+Maybe    5
+Name: count, dtype: int64
+Total valid responses: 18
+
+Percentages:
+Yes      44.444444
+No       27.777778
+Maybe    27.777778
+Name: count, dtype: float64
+
+
+```
+
+Here is the cleaned and analyzed breakdown of the 20 survey responses regarding whether students would use AI for academic research.
+
+### Summary of Analysis Steps
+
+1. **Cleaning:** Removed leading/trailing spaces, quotation marks, and standardized capitalization (e.g., `"" Yes ""` $\rightarrow$ `Yes`, `yes` $\rightarrow$ `Yes`).
+2. **Missing Data:** Treated `(blank)` entries as missing/invalid responses (2 total).
+3. **Valid Responses:** Out of 20 total submissions, 18 responses were valid (8 Yes, 5 No, 5 Maybe).
+
+---
+
+### Survey Results Table
+
+| Response | Count | Percentage (Valid Responses, $n=18$) |
+| --- | --- | --- |
+| **Yes** | 8 | 44.44% |
+| **No** | 5 | 27.78% |
+| **Maybe** | 5 | 27.78% |
+| **Missing / (blank)** | 2 | — |
+| **Total** | **20** | **100.00%** |",correct,Counts and percentages correct. Total row pairs 20 responses with 100% although category percentages use 18 valid responses.
